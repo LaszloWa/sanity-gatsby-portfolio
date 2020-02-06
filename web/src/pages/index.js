@@ -100,7 +100,7 @@ const IndexPage = props => {
           <img src={site.profilePic.asset.url} className='profilePic' width='200' position='center' />
           <div className=''>
             <p>My name is Laszlo, and I'm a <strong>Web Developer</strong>.<br />
-              As you might have guessed from looking at this portfolio, my focus is more on JavaScript than on CSS &#128578;. I know JavaScript, React, Node, Express and PostgreSQL.</p>
+              I use JavaScript, React, Node, Express and PostgreSQL.</p>
             <p>You can find some of my projects below. If you like what you see, want to discuss one of the projects, or get in touch with me regarding a job opportunity, don’t hesitate to reach out to me on <a className='socialLink' href='https://www.linkedin.com/in/laszlo-wagenblast'>LinkedIn</a> or <a className='socialLink' href='https://twitter.com/LaszloWa'>Twitter</a>!
             </p>
           </div>
