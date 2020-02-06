@@ -15,6 +15,11 @@ export default {
       title: 'Title'
     },
     {
+      name: 'profilePic',
+      title: 'Profile Picture',
+      type: 'figure'
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Description',
