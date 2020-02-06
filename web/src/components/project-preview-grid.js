@@ -11,7 +11,7 @@ function ProjectPreviewGrid (props) {
       <ul className={styles.grid}>
         {props.nodes &&
           props.nodes.map(node => (
-            <li key={node.id}>
+            <li key={node.id} className='projectTile' >
               <ProjectPreview {...node} />
             </li>
           ))}

@@ -1,5 +1,6 @@
-.aboutMe {
+.titleIntro {
     text-align: center;
+    margin-bottom: 7rem;
 }
 
 .profilePic {
@@ -8,4 +9,20 @@
     border: 1px solid #82807E;
     margin-bottom: 3rem;
     box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.socialLink {
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.socialLink:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+.projectTile:hover {
+    scale: 1.05;
+    transition: 1s;
 }
