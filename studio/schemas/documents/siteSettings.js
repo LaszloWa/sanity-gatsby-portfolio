@@ -20,10 +20,9 @@ export default {
       type: 'figure'
     },
     {
-      name: 'aboutPortfolio',
-      type: 'text',
-      title: 'About this Portfolio',
-      description: 'Text to display on title page of portfolio.'
+      name: 'body',
+      title: 'Body',
+      type: 'projectPortableText'
     },
     {
       name: 'description',

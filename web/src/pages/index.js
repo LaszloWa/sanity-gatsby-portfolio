@@ -11,6 +11,7 @@ import ProjectPreviewGrid from '../components/project-preview-grid'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import '../styles/index.css'
+import BlockContent from '../components/block-content'
 
 export const query = graphql`
   query IndexPageQuery {
@@ -22,7 +23,7 @@ export const query = graphql`
           originalFilename
         }
       }
-      aboutPortfolio
+      _rawBody
       description
       keywords
     }
@@ -99,11 +100,13 @@ const IndexPage = props => {
           <h1>Welcome to {`${site.title.charAt(0).toLowerCase()}${site.title.slice(1)}`}</h1>
           <img src={site.profilePic.asset.url} className='profilePic' width='200' position='center' />
           <div className=''>
-            <p>Hi, I’m Laszlo and I’m an aspiring <strong>JavaScript developer</strong>.<br />
+            {site._rawBody && <BlockContent blocks={site._rawBody || []} />}
+
+            {/* <p>Hi, I’m Laszlo and I’m an aspiring <strong>JavaScript developer</strong>.<br />
               I’ve been studying and using React, Gatsby, Node, Express, PostgreSQL, and Sanity as a content backend.
             </p>
             <p>You can find some of my projects below. If you like what you see, want to discuss one of the projects, or get in touch with me regarding a job opportunity, don’t hesitate to reach out to me on <a className='socialLink' href='https://www.linkedin.com/in/laszlo-wagenblast'>LinkedIn</a> or <a className='socialLink' href='https://twitter.com/LaszloWa'>Twitter</a>!
-            </p>
+            </p> */}
           </div>
         </div>
         {projectNodes && (
